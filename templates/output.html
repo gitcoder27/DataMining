@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{% if output_result %}
+        <div id="result">
+        <pre>
+        <p style="padding-left: 40px;">{{ output_result }}</p>
+            </pre>
+        </div>
+{#        <div class="w3-cell-row">#}
+        <div class="w3-container">
+{#        <h5>Data Set</h5>#}
+{#            <img class="w3-image" src="/static/images/items.png" alt="not loading">#}
+{#              </div>#}
+{#            <div class="w3-container w3-cell">#}
+{#            <h5>Initial Mean</h5>#}
+{##}
+{##}
+{#        <img class="w3-image" src="/static/images/initial.png" alt="not loading">#}
+{#    </div>#}
+{#             <div class="w3-container w3-cell">#}
+            <a href="/">Back</a>
+            <br>
+            <h5>Clusters with Mean</h5>
+
+
+        <img class="w3-image" src="/static/images/clusters{{ ran }}.png" alt="not loading" style="width: 100%">
+{#            </div>#}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="w3-bar">
+    <div class="w3-dropdown-hover">
+    <button class="w3-btn" >Clustering</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="/kmeans" class="w3-bar-item w3-button">K-Means</a>
+        </div>
+        </div>
+        <div class="w3-dropdown-hover">
+    <button class="w3-btn" >Classifications</button>
+        <div id="clustering" class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="" class="w3-bar-item w3-button">Naive Bayes</a>
+        </div>
+        </div>
+    </div>
+
+
+{% endblock %}

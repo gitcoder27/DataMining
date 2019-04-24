@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="w3-container">
+    <form class="w3-panel w3-card-4" action="/kmeansalgo" method="post" enctype="multipart/form-data">
+        <input class="w3-input" type="text" name="k" placeholder="Enter Value of K">
+        <button class="w3-btn" type="submit">Submit</button>
+    </form>
+
+    </div>
+{% endblock %}
